@@ -5,7 +5,7 @@ Run App.main --> for stand alone
 Run WebInit --> for web based
 
 Make sure spark is runing or it can run standlone by changing the master url inside,
-
+```
 SparkScalaInterpreter - replace below code with, 
 static {
         Interpreter.register(
@@ -30,10 +30,10 @@ static {
 
     }
     
-    
-    
+```    
+ 
 this one,
-
+```
 static {
     Interpreter.register(
         "spark",
@@ -60,3 +60,4 @@ static {
             .add("args", "", "spark commandline args").build());
 
   }
+```
